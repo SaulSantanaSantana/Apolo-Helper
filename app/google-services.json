@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499918970817",
+    "project_id": "apolo-helper",
+    "storage_bucket": "apolo-helper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499918970817:android:51c178e8b1b1572a039940",
+        "android_client_info": {
+          "package_name": "com.example.apolohelper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_x21y-Wal58HYuje1dr_XNfOeFyBg8VY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
