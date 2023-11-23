@@ -171,7 +171,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/archery"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="178dp" />
+        tools:layout_editor_absoluteY="178dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -179,7 +180,8 @@
         android:layout_height="16dp"
         app:srcCompat="@drawable/google_icon"
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="699dp" />
+        tools:layout_editor_absoluteY="699dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -187,7 +189,8 @@
         android:layout_height="16dp"
         app:srcCompat="@drawable/person_icon"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="308dp" />
+        tools:layout_editor_absoluteY="308dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -195,7 +198,8 @@
         android:layout_height="16dp"
         app:srcCompat="@drawable/lock_icon"
         tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="407dp" />
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
