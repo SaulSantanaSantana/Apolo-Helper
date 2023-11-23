@@ -12,7 +12,12 @@
           "package_name": "com.example.apolohelper"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "499918970817-rr11siiv4muhme9hj3i1ivcn114m90po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyB_x21y-Wal58HYuje1dr_XNfOeFyBg8VY"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499918970817-rr11siiv4muhme9hj3i1ivcn114m90po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
