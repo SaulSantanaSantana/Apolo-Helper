@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="507dp"
+        android:layout_height="1104dp"
+        android:src="@drawable/sun_tornado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        android:contentDescription="background" />
+
+    <View
+        android:id="@+id/greyBox"
+        android:layout_width="351dp"
+        android:layout_height="528dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="@id/iniciarSesionGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewEmail" />
+
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <TextView
+        android:id="@+id/textViewContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contrasena"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="88dp"
+        android:autofillHints="Email"
+        android:background="@drawable/blue_background"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greyBox"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints="Contraseña"
+        android:background="@drawable/blue_background"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/olvidoContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="380dp"
+        android:clickable="true"
+        android:onClick="olvidoContrasenaClick"
+        android:text="@string/olvido"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/blue_background"
+        android:enabled="false"
+        android:text="@string/registrarse"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/iniciarSesion"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="252dp"
+        android:enabled="false"
+        android:text="@string/iniciarSesion"
+        android:textColor="@color/gray"
+        android:background="@drawable/orange_background"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/linea"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarSesionGoogle"
+        app:layout_constraintEnd_toEndOf="@id/greyBox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/greyBox"
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesion" />
+
+    <Button
+        android:id="@+id/iniciarSesionGoogle"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/white_background"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:text="Continua con Google"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/archery"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="14dp"
+        android:layout_height="16dp"
+        app:srcCompat="@drawable/google_icon"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="699dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:srcCompat="@drawable/person_icon"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        app:srcCompat="@drawable/lock_icon"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
