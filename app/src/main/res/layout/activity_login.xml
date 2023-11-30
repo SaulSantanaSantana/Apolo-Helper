@@ -12,48 +12,52 @@
         android:id="@+id/imageViewBackground"
         android:layout_width="507dp"
         android:layout_height="1104dp"
+        android:contentDescription="background"
         android:src="@drawable/sun_tornado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685"
-        android:contentDescription="background" />
+        app:layout_constraintVertical_bias="0.427" />
+
 
     <View
         android:id="@+id/greyBox"
-        android:layout_width="351dp"
-        android:layout_height="528dp"
+        android:layout_width="379dp"
+        android:layout_height="524dp"
         android:layout_margin="20dp"
         android:background="@drawable/rounded_background"
-        app:layout_constraintBottom_toBottomOf="@id/iniciarSesionGoogle"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textViewEmail" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
 
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/email"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:layout_editor_absoluteX="75dp" />
 
     <TextView
-        android:id="@+id/textViewContrasena"
+        android:id="@+id/textViewPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/contrasena"
+        android:layout_marginBottom="4dp"
+        android:text="@string/password"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteX="66dp" />
 
     <EditText
         android:id="@+id/email"
@@ -72,13 +76,12 @@
         tools:ignore="LabelFor" />
 
     <EditText
-        android:id="@+id/contraseña"
+        android:id="@+id/password"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginTop="56dp"
         android:autofillHints="Contraseña"
         android:background="@drawable/blue_background"
-        android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
@@ -90,116 +93,128 @@
         tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/olvidoContrasena"
+        android:id="@+id/textViewForgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="380dp"
         android:clickable="true"
-        android:onClick="olvidoContrasenaClick"
-        android:text="@string/olvido"
+        android:focusable="true"
+        android:onClick="ForgetPasswordClick"
+        android:text="@string/forget"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        android:focusable="true" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.176" />
 
     <Button
-        android:id="@+id/registrarse"
+        android:id="@+id/register"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="324dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/blue_background"
-        android:enabled="false"
-        android:text="@string/registrarse"
-        android:textColor="@color/white"
         android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:enabled="false"
+        android:text="@string/register"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForgetPassword" />
 
     <Button
-        android:id="@+id/iniciarSesion"
+        android:id="@+id/buttonLogin"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="252dp"
-        android:enabled="false"
-        android:text="@string/iniciarSesion"
-        android:textColor="@color/gray"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/orange_background"
         android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:enabled="false"
+        android:text="@string/login"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginGoogle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.211" />
 
     <View
-        android:id="@+id/linea"
+        android:id="@+id/line"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:background="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/iniciarSesionGoogle"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginGoogle"
         app:layout_constraintEnd_toEndOf="@id/greyBox"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/greyBox"
-        app:layout_constraintTop_toBottomOf="@+id/iniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <Button
-        android:id="@+id/iniciarSesionGoogle"
+        android:id="@+id/buttonLoginGoogle"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/white_background"
         android:elevation="10dp"
         android:enabled="false"
         android:text="Continua con Google"
         android:textColor="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/greyBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iconArchery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/archery"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="178dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iconGoogle"
         android:layout_width="14dp"
         android:layout_height="16dp"
         app:srcCompat="@drawable/google_icon"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="699dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="649dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/iconPerson"
         android:layout_width="16dp"
         android:layout_height="16dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBackground"
         app:srcCompat="@drawable/person_icon"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="308dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="274dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/iconLock"
         android:layout_width="15dp"
         android:layout_height="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/greyBox"
         app:srcCompat="@drawable/lock_icon"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="407dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="370dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
