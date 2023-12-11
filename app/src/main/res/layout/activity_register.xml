@@ -1,221 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.LoginActivity">
 
 
-    <ImageView
-        android:id="@+id/imageViewBackground"
-        android:layout_width="507dp"
-        android:layout_height="1104dp"
-        android:contentDescription="background"
-        android:src="@drawable/sun_tornado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="507dp"
+            android:layout_height="1104dp"
+            android:contentDescription="background"
+            android:src="@drawable/sun_tornado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.225" />
 
-    <View
-        android:id="@+id/greyBox"
-        android:layout_width="383dp"
-        android:layout_height="593dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/rounded_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495"
-        tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/greyBox"
+            android:layout_width="383dp"
+            android:layout_height="593dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textViewEmail"
-        android:layout_width="44dp"
-        android:layout_height="25dp"
-        android:text="@string/email"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp" />
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:text="@string/email"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <TextView
-        android:id="@+id/textViewnombre"
-        android:layout_width="67dp"
-        android:layout_height="21dp"
-        android:text="@string/name"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nombre"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp" />
+        <TextView
+            android:id="@+id/textViewnombre"
+            android:layout_width="67dp"
+            android:layout_height="21dp"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/nombre"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <TextView
-        android:id="@+id/textViewContrasena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/contraseña"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp" />
+        <TextView
+            android:id="@+id/textViewContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/contraseña"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="68dp" />
 
-    <EditText
-        android:id="@+id/nombre"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="84dp"
-        android:autofillHints="Email"
-        android:background="@drawable/blue_background"
-        android:hint="@string/name"
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/greyBox"
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="84dp"
+            android:autofillHints="Email"
+            android:background="@drawable/blue_background"
+            android:hint="@string/name"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/greyBox"
+            tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="44dp"
-        android:autofillHints="Contraseña"
-        android:background="@drawable/blue_background"
-        android:hint="@string/email"
-        android:imeActionLabel="@string/login"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingStart="16dp"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="44dp"
+            android:autofillHints="Contraseña"
+            android:background="@drawable/blue_background"
+            android:hint="@string/email"
+            android:imeActionLabel="@string/login"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre"
+            tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/contraseña"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
-        android:autofillHints="Contraseña"
-        android:background="@drawable/blue_background"
-        android:imeActionLabel="@string/login"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/white"
-        android:hint="@string/password"
-        android:textColorHint="@color/white"
-        android:paddingStart="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:autofillHints="Contraseña"
+            android:background="@drawable/blue_background"
+            android:imeActionLabel="@string/login"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            tools:ignore="LabelFor" />
 
-    <Button
-        android:id="@+id/registrarse"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_gravity="start"
-        android:background="@drawable/blue_background"
-        android:elevation="10dp"
-        android:enabled="false"
-        android:text="@string/register"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/iniciarSesion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxTerminos"
-        app:layout_constraintVertical_bias="0.31" />
+        <Button
+            android:id="@+id/registrarse"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:background="@drawable/blue_background"
+            android:elevation="10dp"
+            android:enabled="true"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/iniciarSesion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxTerminos"
+            app:layout_constraintVertical_bias="0.31" />
 
-    <Button
-        android:id="@+id/iniciarSesion"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_gravity="start"
-        android:background="@drawable/orange_background"
-        android:elevation="10dp"
-        android:enabled="false"
-        android:text="@string/login"
-        android:textColor="@color/gray"
-        app:layout_constraintBottom_toBottomOf="@+id/greyBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxTerminos"
-        app:layout_constraintVertical_bias="0.862" />
+        <Button
+            android:id="@+id/iniciarSesion"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:background="@drawable/orange_background"
+            android:elevation="10dp"
+            android:enabled="true"
+            android:text="@string/login"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/greyBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxTerminos"
+            app:layout_constraintVertical_bias="0.862" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="20dp"
-        android:layout_height="22dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/nombre"
-        app:layout_constraintEnd_toStartOf="@+id/textViewnombre"
-        app:layout_constraintTop_toTopOf="@+id/greyBox"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/person_icon"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/nombre"
+            app:layout_constraintEnd_toStartOf="@+id/textViewnombre"
+            app:layout_constraintTop_toTopOf="@+id/greyBox"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/person_icon"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="15dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/contraseña"
-        app:layout_constraintEnd_toStartOf="@+id/textViewContrasena"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:srcCompat="@drawable/lock_icon"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/contraseña"
+            app:layout_constraintEnd_toStartOf="@+id/textViewContrasena"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            app:srcCompat="@drawable/lock_icon"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="15dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        app:srcCompat="@drawable/letter_icon" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
+            app:layout_constraintTop_toBottomOf="@+id/nombre"
+            app:srcCompat="@drawable/letter_icon" />
 
-    <CheckBox
-        android:id="@+id/checkBoxInfo"
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:text="Acepto que mi información sea usada por el equipo de desarrollo para mejorar la app."
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/greyBox"
-        app:layout_constraintStart_toStartOf="@+id/greyBox"
-        app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+        <CheckBox
+            android:id="@+id/checkBoxInfo"
+            android:layout_width="310dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:text="Acepto que mi información sea usada por el equipo de desarrollo para mejorar la app."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/greyBox"
+            app:layout_constraintStart_toStartOf="@+id/greyBox"
+            app:layout_constraintTop_toBottomOf="@+id/contraseña" />
 
-    <CheckBox
-        android:id="@+id/checkBoxTerminos"
-        android:layout_width="314dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:text="Acepto los Términos y condiciones del servivcio y la licencia de usuario."
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/greyBox"
-        app:layout_constraintStart_toStartOf="@+id/greyBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxInfo" />
+        <CheckBox
+            android:id="@+id/checkBoxTerminos"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:text="Acepto los Términos y condiciones del servivcio y la licencia de usuario."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/greyBox"
+            app:layout_constraintStart_toStartOf="@+id/greyBox"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxInfo" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

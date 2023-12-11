@@ -1,6 +1,7 @@
 package com.example.apolohelper.ui.login
 
 import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,8 +9,10 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
@@ -118,6 +121,16 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         }
+
+        val btnRegistrarse: Button = findViewById(R.id.register)
+
+        btnRegistrarse.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View) {
+                // Crear un Intent para iniciar la segunda actividad
+                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+                startActivity(intent)
+            }
+        })
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {
