@@ -41,6 +41,7 @@
         android:text="@string/email"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="#424B54"
         app:layout_constraintBottom_toTopOf="@+id/email"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="66dp" />
@@ -52,6 +53,7 @@
         android:text="@string/name"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="#424B54"
         app:layout_constraintBottom_toTopOf="@+id/nombre"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="66dp" />
@@ -63,6 +65,7 @@
         android:text="@string/password"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="#424B54"
         app:layout_constraintBottom_toTopOf="@+id/contraseña"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="68dp" />
@@ -202,6 +205,8 @@
         android:layout_marginTop="28dp"
         android:text="Acepto que mi información sea usada por el equipo de desarrollo para mejorar la app."
         android:textSize="12sp"
+        android:textColor="#424B54"
+        android:buttonTint="#424B54"
         app:layout_constraintEnd_toEndOf="@+id/greyBox"
         app:layout_constraintStart_toStartOf="@+id/greyBox"
         app:layout_constraintTop_toBottomOf="@+id/contraseña" />
@@ -213,6 +218,8 @@
         android:layout_marginTop="20dp"
         android:text="Acepto los Términos y condiciones del servivcio y la licencia de usuario."
         android:textSize="12sp"
+        android:textColor="#424B54"
+        android:buttonTint="#424B54"
         app:layout_constraintEnd_toEndOf="@+id/greyBox"
         app:layout_constraintStart_toStartOf="@+id/greyBox"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxInfo" />

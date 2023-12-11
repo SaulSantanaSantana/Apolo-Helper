@@ -24,4 +24,5 @@
     <string name="avarage_tens">Promedio de dieces:</string>
     <string name="summary">Resumen Puntuación</string>
     <string name="save_points">Guardar Puntuación</string>
+    <string name="num_arrow">Número de flechas</string>
 </resources>
