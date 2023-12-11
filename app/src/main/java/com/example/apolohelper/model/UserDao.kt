@@ -1,11 +1,12 @@
 package com.example.apolohelper.model
 
 import com.google.firebase.Firebase
-import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.FirebaseFirestore;
+
 
 class UserDao {
 
-    private val db = Firebase.firestore
+    private val db = FirebaseFirestore.getInstance()
     private val userCollection = db.collection("usuario")
 
     fun storeUser(  user: User,callback: (Boolean, Exception? )-> Unit){
