@@ -3,10 +3,164 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:background="#E0E0E0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    android:background="#E0E0E0"
+    tools:context=".ui.login.LoginActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/textViewTotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/total_points"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <TextView
+        android:id="@+id/textViewTotalPointsD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="demo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalPoints"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <TextView
+        android:id="@+id/textViewAvarage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/avarage"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPoints" />
+
+    <TextView
+        android:id="@+id/textViewDesviationD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="demo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewDesviation"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTenD" />
+
+    <TextView
+        android:id="@+id/textViewAvarageTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/avarage_tens"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAvarage" />
+
+    <TextView
+        android:id="@+id/textViewAvarageD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="demo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toEndOf="@+id/textViewAvarage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPointsD" />
+
+    <TextView
+        android:id="@+id/textViewTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/total_tens"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAvarageTen" />
+
+    <TextView
+        android:id="@+id/textViewAvarageTenD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="demo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toEndOf="@+id/textViewAvarageTen"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAvarageD" />
+
+    <TextView
+        android:id="@+id/textViewDesviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/desviation"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTen" />
+
+    <TextView
+        android:id="@+id/textViewTenD"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:text="demo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/textViewTen"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAvarageTenD" />
+
+    <TextView
+        android:id="@+id/textViewUbication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ubication"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDesviation" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.8" />
 
 
     <View
@@ -22,22 +176,23 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textViewPerfil"
+        android:id="@+id/textViewSummary"
         android:layout_width="337dp"
         android:layout_height="43dp"
-        android:text="Resumen Puntuación"
+        android:text="@string/summary"
         android:textAlignment="center"
         android:textColor="@color/darkBlue"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/orangeBox"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/orangeBox"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.534" />
 
     <Button
-        android:id="@+id/buttonEditData"
+        android:id="@+id/buttonSaveData"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_gravity="start"
@@ -45,7 +200,7 @@
         android:background="@drawable/orange_background"
         android:elevation="10dp"
         android:enabled="false"
-        android:text="Guardar Puntuación"
+        android:text="@string/save_points"
         android:textColor="@color/gray"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/textViewPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSummary"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="@+id/orangeBox"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,7 +224,7 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="140dp"
         android:adjustViewBounds="true"
         android:background="@drawable/circle_background"
         android:clipToOutline="true"
@@ -79,6 +234,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="141dp"
@@ -87,57 +243,50 @@
         android:text="Nombre demo"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/lineProfile1"
+        app:layout_constraintBottom_toTopOf="@+id/line1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <View
-        android:id="@+id/lineProfile1"
+        android:id="@+id/line2"
         android:layout_width="0dp"
         android:layout_height="2dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUbication"
         app:layout_constraintWidth_percent="0.8" />
-
-    <View
-        android:id="@+id/lineProfile2"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-
-        android:background="@color/gray"
-        app:layout_constraintWidth_percent="0.8"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="631dp" />
 
     <TextView
         android:id="@+id/textViewMotivational"
-        android:layout_width="141dp"
-        android:layout_height="31dp"
+        android:layout_width="252dp"
+        android:layout_height="30dp"
         android:layout_marginTop="22dp"
         android:text="Texto motivacional"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/lineProfile3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lineProfile2"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/lineProfile3"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:background="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/buttonEditData"
-        app:layout_constraintTop_toBottomOf="@+id/lineProfile2"
-        app:layout_constraintVertical_bias="0.482"
-        app:layout_constraintWidth_percent="0.8"
-        tools:layout_editor_absoluteX="41dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonSaveData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        app:layout_constraintVertical_bias="0.645"
+        app:layout_constraintWidth_percent="0.8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

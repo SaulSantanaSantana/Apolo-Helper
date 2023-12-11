@@ -15,5 +15,13 @@
     <string name="change_image">Cambiar Imagen</string>
     <string name="save_changes">Guardar cambios</string>
     <string name="login_failed">El registro ha fallado</string>
-    <string name="datos">Datos Puntuación</string>
+    <string name="data">Datos Puntuación</string>
+    <string name="total_points">Puntos Totales</string>
+    <string name="avarage">Promedio de puntos:</string>
+    <string name="desviation">Desvición típica:</string>
+    <string name="ubication">Ubicación:</string>
+    <string name="total_tens">Dieces totales:</string>
+    <string name="avarage_tens">Promedio de dieces:</string>
+    <string name="summary">Resumen Puntuación</string>
+    <string name="save_points">Guardar Puntuación</string>
 </resources>
