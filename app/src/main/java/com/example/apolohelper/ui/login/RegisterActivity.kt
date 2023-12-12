@@ -1,10 +1,12 @@
 package com.example.apolohelper.ui.login
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.os.Message
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
@@ -48,5 +50,17 @@ class RegisterActivity() : AppCompatActivity(){
         btnRegistro.setOnClickListener {
             registerPresenter.RegisterUser(binding.nombre.text.toString(),binding.email.text.toString(),binding.contraseA.text.toString())
         }
+        showPopupMessage("a","b")
+    }
+
+    fun showPopupMessage(title: String, message: String){
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle(title)
+        alertDialogBuilder.setMessage(message)
+        alertDialogBuilder.setPositiveButton("ok"){dialog,_ ->
+            dialog.dismiss()
+        }
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
     }
 }

@@ -25,4 +25,9 @@
     <string name="summary">Resumen Puntuación</string>
     <string name="save_points">Guardar Puntuación</string>
     <string name="num_arrow">Número de flechas</string>
+    <string name="prompt_email" />
+    <string name="prompt_password" />
+    <string name="action_sign_in_short" />
+    <string name="action_sign_in" />
+    <string name="welcome" />
 </resources>

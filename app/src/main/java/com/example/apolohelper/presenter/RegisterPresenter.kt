@@ -7,16 +7,23 @@ import com.example.apolohelper.model.AuthModelInterface
 import com.example.apolohelper.ui.login.RegisterActivity
 
 class RegisterPresenter {
-    private val view: AppCompatActivity
+    private val view: RegisterActivity
     private val model: AuthModelInterface
-    constructor(view: AppCompatActivity, model:AuthModelInterface) {
+    constructor(view: RegisterActivity, model:AuthModelInterface) {
         this.view = view
         this.model = model
     }
 
     fun RegisterUser(name: String,email: String,password: String){
-        Log.d("presenter",name + email)
-        this.model.register(name,password, email)
+
+        this.model.register(name,password, email,fun(c,_){
+            if(c){
+                view.showPopupMessage("registro","Registro Completado")
+            }
+            else{
+                view.showPopupMessage("registro","Registro Fallido")
+            }
+        })
     }
 
 }
