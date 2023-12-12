@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
 
         val btnLog: Button? = binding.login
         btnLog?.setOnClickListener {
-            loginPresenter.LogUser(binding.email?.text.toString(), binding.password.text.toString())
+            checkData(binding.email?.text.toString(), binding.password.text.toString())
         }
     }
 
@@ -52,6 +52,16 @@ class LoginActivity : AppCompatActivity() {
         }
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
+    }
+
+    fun checkData(mail: String, password:String){
+        val regex = Regex("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")
+        if(regex.matches(mail) && password.isNotEmpty()){
+            loginPresenter.LogUser(mail, password)
+        }else{
+            showPopupMessage("Inicio de sesión", "Sus credenciales no son válidas")
+        }
+
     }
 }
 
