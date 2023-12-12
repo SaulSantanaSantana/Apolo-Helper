@@ -1,6 +1,7 @@
 package com.example.apolohelper.presenter
 
 import android.content.Intent
+import android.util.Log
 import androidx.core.content.ContextCompat.startActivity
 import com.example.apolohelper.model.AuthModelInterface
 import com.example.apolohelper.ui.login.LoginActivity
@@ -16,7 +17,10 @@ class LoginPresenter {
 
     fun LogUser(email: String,password: String){
         this.model.logInUser(password, email,fun(c,_){
+            Log.d("email",email)
+            Log.d("password",password)
             if(c){
+
                 view.showPopupMessage("Inicio de Sesión","UwU")
             }
             else{

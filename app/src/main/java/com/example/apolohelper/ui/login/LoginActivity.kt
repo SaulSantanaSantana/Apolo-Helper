@@ -37,9 +37,15 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnLog: Button? = binding.login
-        btnLog?.setOnClickListener {
-            loginPresenter.LogUser(binding.email?.text.toString(), binding.password.text.toString())
+        val btnLog: Button = findViewById(R.id.buttonLogin)
+        btnLog.setOnClickListener {
+            loginPresenter.LogUser(binding.email!!.text.toString(), binding.password.text.toString())
+        }
+
+        val btnRegister: Button = binding.register!!
+        btnRegister.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 

@@ -28,7 +28,7 @@ class AuthManager {
     }
 
     fun logInUser(email: String, password: String, callback: (Boolean, Exception?) -> Unit) {
-        auth.signInWithEmailAndPassword(email, password)
+        auth.signInWithEmailAndPassword(password, email)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     callback(true, null) // Successful login

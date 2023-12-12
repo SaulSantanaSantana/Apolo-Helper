@@ -11,6 +11,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Patterns
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Button
@@ -51,7 +52,6 @@ class RegisterActivity() : AppCompatActivity(){
 
             registerPresenter.RegisterUser(binding.nombre.text.toString(),binding.email.text.toString(),binding.contraseA.text.toString())
         }
-        showPopupMessage("a","b")
     }
 
     fun showPopupMessage(title: String, message: String){
@@ -63,5 +63,44 @@ class RegisterActivity() : AppCompatActivity(){
         }
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
+    }
+
+    fun validateForm(): Boolean{
+        var passed: Boolean= true
+        val name = binding.nombre.text.toString().trim()
+        val email = binding.email.text.toString().trim()
+        val password = binding.contraseA.text.toString().trim()
+        binding.email.error = null
+        binding.nombre.error = null
+        binding.contraseA.error = null
+        binding.checkBoxInfo.error = null
+        binding.checkBoxTerminos.error = null
+
+        if(name.isEmpty()){
+            binding.nombre.error="Nombre requerido"
+            passed = false
+        }
+        if(password.isEmpty()){
+            binding.contraseA.error="Contraseña requerida"
+            passed = false
+        }
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            binding.email.error = "La dirección de Email no es válida"
+            passed = false
+        }
+        if(email.isEmpty()){
+            binding.email.error="Email requerido"
+            passed = false
+        }
+        if(!binding.checkBoxInfo.isChecked){
+            binding.checkBoxInfo.error="Confirme"
+            passed = false
+        }
+        if(!binding.checkBoxTerminos.isChecked){
+            binding.checkBoxTerminos.error="Acepte los terminos"
+            passed = false
+        }
+
+        return passed
     }
 }
