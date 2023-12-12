@@ -160,7 +160,7 @@
             android:layout_gravity="start"
             android:background="@drawable/orange_background"
             android:elevation="10dp"
-            android:enabled="false"
+            android:enabled="true"
             android:text="@string/login"
             android:textColor="@color/gray"
             app:layout_constraintBottom_toBottomOf="@+id/greyBox"
