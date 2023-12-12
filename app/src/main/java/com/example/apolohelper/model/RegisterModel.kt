@@ -11,10 +11,10 @@ class AuthModel(): AuthModelInterface{
     private val authManager=AuthManager()
     private val userDao= UserDao()
     override fun register(userName: String, password: String, email: String, callback: (Boolean,Exception?)->Unit) {
-        authManager.register(email,password, fun(c,_) {
-            if(c){
+        authManager.register(email,password, fun(c,id,_) {
+            if(c && id!=null){
                 val user = User("",userName,email,"","","",)
-                userDao.storeUser(user,fun(_,_){})
+                userDao.storeUser(user,id,fun(_,_){})
                 callback(true,null)
             }else if (!c){
                 callback(false,null)
