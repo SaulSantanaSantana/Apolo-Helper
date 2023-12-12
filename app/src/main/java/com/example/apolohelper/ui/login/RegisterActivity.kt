@@ -48,6 +48,7 @@ class RegisterActivity() : AppCompatActivity(){
 
         val btnRegistro: Button = binding.registrarse
         btnRegistro.setOnClickListener {
+
             registerPresenter.RegisterUser(binding.nombre.text.toString(),binding.email.text.toString(),binding.contraseA.text.toString())
         }
         showPopupMessage("a","b")
