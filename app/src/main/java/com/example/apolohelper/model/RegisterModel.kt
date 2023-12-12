@@ -21,7 +21,6 @@ class AuthModel(): AuthModelInterface{
             }
         })
     }
-
     override fun logInUser(email: String, password: String, callback: (Boolean,Exception?)->Unit){
         authManager.logInUser(email,password, fun(c,_){
             if(c){
