@@ -6,6 +6,8 @@ import javax.security.auth.callback.Callback
 interface AuthModelInterface{
     fun register(userName: String, password: String, email:String, callback: (Boolean,Exception?)->Unit)
     fun logInUser(email:String, password: String, callback: (Boolean,Exception?)->Unit)
+
+    fun getUserData(callback: (User?, Exception?) -> Unit)
 }
 class AuthModel(): AuthModelInterface{
     private val authManager=AuthManager()
@@ -29,6 +31,21 @@ class AuthModel(): AuthModelInterface{
                 callback(false,null)
             }
         })
+    }
+
+    override fun getUserData(callback: (User?, Exception?) -> Unit){
+
+       val userUid = authManager.getUserUid()
+        val userDao = UserDao()
+        if (userUid != null) {
+            userDao.getUser(userUid,fun(u,_){
+                if(u!=null){
+                    callback(u,null)
+                }else{
+                    callback(null,null)
+                }
+            })
+        }
     }
 
 

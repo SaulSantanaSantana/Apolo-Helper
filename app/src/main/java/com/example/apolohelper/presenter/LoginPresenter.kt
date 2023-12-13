@@ -20,8 +20,7 @@ class LoginPresenter {
             Log.d("email",email)
             Log.d("password",password)
             if(c){
-
-                view.showPopupMessage("Inicio de Sesión","UwU")
+                view.goToProfile()
             }
             else{
                 view.showPopupMessage("Inicio de Sesión","Inicio de Sesión fallido, compruebe sus credenciales.")

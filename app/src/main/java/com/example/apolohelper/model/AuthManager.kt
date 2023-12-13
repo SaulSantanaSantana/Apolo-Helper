@@ -38,6 +38,10 @@ class AuthManager {
             }
     }
 
+    fun getUserUid(): String? {
+        return auth.currentUser?.uid
+    }
+
     fun logOut() {
         auth.signOut()
     }

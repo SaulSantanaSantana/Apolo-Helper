@@ -65,10 +65,15 @@ class LoginActivity : AppCompatActivity() {
         val regex = Regex("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")
         if(regex.matches(mail) && password.isNotEmpty()){
             loginPresenter.LogUser(mail, password)
+
         }else{
             showPopupMessage("Inicio de sesión", "Sus credenciales no son válidas")
         }
 
+    }
+    fun goToProfile(){
+        val intent = Intent(this@LoginActivity, ProfileActivity::class.java)
+        startActivity(intent)
     }
 }
 
