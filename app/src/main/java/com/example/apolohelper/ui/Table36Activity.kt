@@ -30,406 +30,87 @@ class Table36Activity: AppCompatActivity() {
         puntuacion = bundle?.get("puntuacion") as Puntuacion
         Log.d("puntuacion",puntuacion?.diana, Throwable())
 
-        binding.editTextScore1.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),0)}
-            }
-        })
-        binding.editTextScore2.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),1)}
-            }
-        })
-        binding.editTextScore3.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),2)}
-            }
-        })
-        binding.editTextScore4.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),3)}
-            }
-        })
-        binding.editTextScore5.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),4)}
-            }
-        })
-        binding.editTextScore6.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),5)}
-            }
-        })
-        binding.editTextScore7.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),6)}
-            }
-        })
-        binding.editTextScore8.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),7)}
-            }
-        })
-        binding.editTextScore9.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),8)}
-            }
-        })
-        binding.editTextScore10.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),9)}
-            }
-        })
-        binding.editTextScore11.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),10)}
-            }
-        })
-        binding.editTextScore12.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),11)}
-            }
-        })
-        binding.editTextScore13.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),12)}
-            }
-        })
-        binding.editTextScore14.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),13)}
-            }
-        })
-        binding.editTextScore15.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),14)}
-            }
-        })
-        binding.editTextScore16.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),15)}
-            }
-        })
-        binding.editTextScore17.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),16)}
-            }
-        })
-        binding.editTextScore18.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),17)}
-            }
-        })
-        binding.editTextScore19.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),18)}
-            }
-        })
-        binding.editTextScore20.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),19)}
-            }
-        })
-        binding.editTextScore21.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),20)}
-            }
-        })
-        binding.editTextScore22.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),21)}
-            }
-        })
-        binding.editTextScore23.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),22)}
-            }
-        })
-        binding.editTextScore24.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),23)}
-            }
-        })
-        binding.editTextScore25.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),24)}
-            }
-        })
-        binding.editTextScore26.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),25)}
-            }
-        })
-        binding.editTextScore27.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),26)}
-            }
-        })
-        binding.editTextScore28.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),27)}
-            }
-        })
-        binding.editTextScore29.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),28)}
-            }
-        })
-        binding.editTextScore30.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),29)}
-            }
-        })
-        binding.editTextScore31.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),30)}
-            }
-        })
-        binding.editTextScore32.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),31)}
-            }
-        })
-        binding.editTextScore33.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),32)}
-            }
-        })
-        binding.editTextScore34.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),33)}
-            }
-        })
-        binding.editTextScore35.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),34)}
-            }
-        })
-        binding.editTextScore36.addTextChangedListener(object: TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                
-            }
-            override fun afterTextChanged(s: Editable?) {
-                if(s.toString()!=""){puntuacion.AddPuntuacion(s.toString().toInt(),35)}
-            }
-        })
-
 
         binding.buttonEditData.setOnClickListener {
-            Log.d("puntuacion", puntuacion.total.toString())
+
+            val puntuacionTotal =
+                Integer.parseInt(binding.editTextScore1.text.toString()) +
+                        Integer.parseInt(binding.editTextScore1.text.toString()) +
+                        Integer.parseInt(binding.editTextScore2.text.toString()) +
+                        Integer.parseInt(binding.editTextScore3.text.toString()) +
+                        Integer.parseInt(binding.editTextScore4.text.toString()) +
+                        Integer.parseInt(binding.editTextScore5.text.toString()) +
+                        Integer.parseInt(binding.editTextScore6.text.toString()) +
+                        Integer.parseInt(binding.editTextScore7.text.toString()) +
+                        Integer.parseInt(binding.editTextScore8.text.toString()) +
+                        Integer.parseInt(binding.editTextScore9.text.toString()) +
+                        Integer.parseInt(binding.editTextScore10.text.toString()) +
+                        Integer.parseInt(binding.editTextScore11.text.toString()) +
+                        Integer.parseInt(binding.editTextScore12.text.toString()) +
+                        Integer.parseInt(binding.editTextScore13.text.toString()) +
+                        Integer.parseInt(binding.editTextScore14.text.toString()) +
+                        Integer.parseInt(binding.editTextScore15.text.toString()) +
+                        Integer.parseInt(binding.editTextScore16.text.toString()) +
+                        Integer.parseInt(binding.editTextScore17.text.toString()) +
+                        Integer.parseInt(binding.editTextScore18.text.toString()) +
+                        Integer.parseInt(binding.editTextScore19.text.toString()) +
+                        Integer.parseInt(binding.editTextScore20.text.toString()) +
+                        Integer.parseInt(binding.editTextScore21.text.toString()) +
+                        Integer.parseInt(binding.editTextScore22.text.toString()) +
+                        Integer.parseInt(binding.editTextScore23.text.toString()) +
+                        Integer.parseInt(binding.editTextScore24.text.toString()) +
+                        Integer.parseInt(binding.editTextScore25.text.toString()) +
+                        Integer.parseInt(binding.editTextScore26.text.toString()) +
+                        Integer.parseInt(binding.editTextScore27.text.toString()) +
+                        Integer.parseInt(binding.editTextScore28.text.toString()) +
+                        Integer.parseInt(binding.editTextScore29.text.toString()) +
+                        Integer.parseInt(binding.editTextScore30.text.toString()) +
+                        Integer.parseInt(binding.editTextScore31.text.toString()) +
+                        Integer.parseInt(binding.editTextScore32.text.toString()) +
+                        Integer.parseInt(binding.editTextScore33.text.toString()) +
+                        Integer.parseInt(binding.editTextScore34.text.toString()) +
+                        Integer.parseInt(binding.editTextScore35.text.toString()) +
+                        Integer.parseInt(binding.editTextScore36.text.toString())
+
+            puntuacion.AddPuntuacion(binding.editTextScore1.text.toString().toInt(),1)
+            puntuacion.AddPuntuacion(binding.editTextScore2.text.toString().toInt(),2)
+            puntuacion.AddPuntuacion(binding.editTextScore3.text.toString().toInt(),3)
+            puntuacion.AddPuntuacion(binding.editTextScore4.text.toString().toInt(),4)
+            puntuacion.AddPuntuacion(binding.editTextScore5.text.toString().toInt(),5)
+            puntuacion.AddPuntuacion(binding.editTextScore6.text.toString().toInt(),6)
+            puntuacion.AddPuntuacion(binding.editTextScore7.text.toString().toInt(),7)
+            puntuacion.AddPuntuacion(binding.editTextScore8.text.toString().toInt(),8)
+            puntuacion.AddPuntuacion(binding.editTextScore9.text.toString().toInt(),9)
+            puntuacion.AddPuntuacion(binding.editTextScore10.text.toString().toInt(),10)
+            puntuacion.AddPuntuacion(binding.editTextScore11.text.toString().toInt(),11)
+            puntuacion.AddPuntuacion(binding.editTextScore12.text.toString().toInt(),12)
+            puntuacion.AddPuntuacion(binding.editTextScore13.text.toString().toInt(),13)
+            puntuacion.AddPuntuacion(binding.editTextScore14.text.toString().toInt(),14)
+            puntuacion.AddPuntuacion(binding.editTextScore15.text.toString().toInt(),15)
+            puntuacion.AddPuntuacion(binding.editTextScore16.text.toString().toInt(),16)
+            puntuacion.AddPuntuacion(binding.editTextScore17.text.toString().toInt(),17)
+            puntuacion.AddPuntuacion(binding.editTextScore18.text.toString().toInt(),18)
+            puntuacion.AddPuntuacion(binding.editTextScore19.text.toString().toInt(),19)
+            puntuacion.AddPuntuacion(binding.editTextScore20.text.toString().toInt(),20)
+            puntuacion.AddPuntuacion(binding.editTextScore21.text.toString().toInt(),21)
+            puntuacion.AddPuntuacion(binding.editTextScore22.text.toString().toInt(),22)
+            puntuacion.AddPuntuacion(binding.editTextScore23.text.toString().toInt(),23)
+            puntuacion.AddPuntuacion(binding.editTextScore24.text.toString().toInt(),24)
+            puntuacion.AddPuntuacion(binding.editTextScore25.text.toString().toInt(),25)
+            puntuacion.AddPuntuacion(binding.editTextScore26.text.toString().toInt(),26)
+            puntuacion.AddPuntuacion(binding.editTextScore27.text.toString().toInt(),27)
+            puntuacion.AddPuntuacion(binding.editTextScore28.text.toString().toInt(),28)
+            puntuacion.AddPuntuacion(binding.editTextScore29.text.toString().toInt(),29)
+            puntuacion.AddPuntuacion(binding.editTextScore30.text.toString().toInt(),30)
+            puntuacion.AddPuntuacion(binding.editTextScore31.text.toString().toInt(),31)
+            puntuacion.AddPuntuacion(binding.editTextScore32.text.toString().toInt(),32)
+            puntuacion.AddPuntuacion(binding.editTextScore33.text.toString().toInt(),33)
+            puntuacion.AddPuntuacion(binding.editTextScore34.text.toString().toInt(),34)
+            puntuacion.AddPuntuacion(binding.editTextScore35.text.toString().toInt(),35)
+            puntuacion.AddPuntuacion(binding.editTextScore36.text.toString().toInt(),36)
+
+            //Hacer cosas con los puntos
+
         }
 
 
