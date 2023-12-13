@@ -46,97 +46,88 @@
             android:id="@+id/textViewDiana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:text="Diana"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintBottom_toTopOf="@+id/editTextDiana"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/orangeBox"
-            app:layout_constraintVertical_bias="0.729" />
+            app:layout_constraintTop_toBottomOf="@+id/orangeBox" />
 
         <TextView
             android:id="@+id/textViewletra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Letra"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintBottom_toTopOf="@+id/editTextLetra"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.688"
             app:layout_constraintStart_toEndOf="@+id/textViewDiana"
-            app:layout_constraintTop_toBottomOf="@+id/orangeBox"
-            app:layout_constraintVertical_bias="0.882" />
+            app:layout_constraintTop_toBottomOf="@+id/orangeBox" />
 
         <TextView
             android:id="@+id/textViewModalidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:text="Modalidad"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.116"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextLetra" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextDiana" />
 
         <TextView
             android:id="@+id/textViewCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="9dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:text="Categoria"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintBottom_toTopOf="@+id/editTextCategoria"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad" />
 
         <TextView
             android:id="@+id/textViewDistancia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:text="Distancia"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextCategoria"
-            app:layout_constraintVertical_bias="0.689" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextCategoria" />
 
         <TextView
             android:id="@+id/textViewNumeroFlechas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
             android:text="@string/num_arrow"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.138"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDiastancia" />
 
 
         <EditText
             android:id="@+id/editTextNumeroFlechas"
             android:layout_width="320dp"
             android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Número de fechas"
@@ -144,18 +135,15 @@
             android:paddingStart="16dp"
             android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.417"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-            app:layout_constraintVertical_bias="0.513" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumeroFlechas" />
 
         <EditText
             android:id="@+id/editTextDiastancia"
             android:layout_width="320dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Distancia"
@@ -163,15 +151,15 @@
             android:paddingStart="16dp"
             android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.439"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDistancia" />
 
         <EditText
             android:id="@+id/editTextCategoria"
             android:layout_width="320dp"
             android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Categoria"
@@ -179,18 +167,15 @@
             android:paddingStart="16dp"
             android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.417"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-            app:layout_constraintVertical_bias="0.539" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategoria" />
 
         <EditText
             android:id="@+id/editTextModalidad"
             android:layout_width="320dp"
             android:layout_height="50dp"
-            android:layout_marginTop="148dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Modalidad"
@@ -198,16 +183,15 @@
             android:paddingStart="16dp"
             android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.417"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/orangeBox" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewModalidad" />
 
         <EditText
             android:id="@+id/editTextDiana"
             android:layout_width="208dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Diana"
@@ -215,33 +199,31 @@
             android:paddingStart="16dp"
             android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintBottom_toTopOf="@+id/textViewModalidad"
-            app:layout_constraintEnd_toStartOf="@+id/editTextLetra"
-            app:layout_constraintHorizontal_bias="0.546"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDiana" />
 
         <EditText
             android:id="@+id/editTextLetra"
             android:layout_width="76dp"
-            android:layout_height="53dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="56dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/white_background"
             android:ems="10"
             android:hint="Letra"
-            android:textColor="#424B54"
             android:inputType="text"
             android:paddingStart="16dp"
+            android:textColor="#424B54"
             android:textColorHint="@color/gray"
-            app:layout_constraintBottom_toTopOf="@+id/editTextModalidad"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/editTextDiana"
+            app:layout_constraintTop_toBottomOf="@+id/textViewletra" />
 
         <Button
             android:id="@+id/buttonEditData"
             android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_gravity="start"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/orange_background"
             android:elevation="10dp"
             android:enabled="true"
@@ -251,9 +233,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-            app:layout_constraintVertical_bias="0.837" />
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
