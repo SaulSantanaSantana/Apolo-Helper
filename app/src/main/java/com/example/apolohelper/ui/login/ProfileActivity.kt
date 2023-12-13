@@ -20,7 +20,7 @@ class ProfileActivity: AppCompatActivity(){
     private val profilePresenter = ProfilePresenter(this,AuthModel())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        supportActionBar?.hide()
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

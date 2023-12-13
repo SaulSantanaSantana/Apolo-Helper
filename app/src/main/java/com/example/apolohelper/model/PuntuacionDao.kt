@@ -15,7 +15,7 @@ class PuntuacionDao {
 
     fun storePuntuacion( puntuacion: Puntuacion,uid:String,callback: (Boolean, Exception? )-> Unit){
         val puntuacionData = hashMapOf(
-            "userUid" to puntuacion.userUid,
+            "userUid" to uid,
             "diana" to puntuacion.diana,
             "letra" to puntuacion.letra,
             "modalidad" to puntuacion.modalidad,

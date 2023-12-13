@@ -23,6 +23,7 @@ class Table36Activity: AppCompatActivity() {
     private lateinit var puntuacion : Puntuacion
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
 
         binding = ActivityTableDataBinding.inflate(layoutInflater)
         setContentView(binding.root)

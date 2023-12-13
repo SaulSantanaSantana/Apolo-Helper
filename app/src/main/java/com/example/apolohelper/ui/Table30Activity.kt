@@ -20,7 +20,7 @@ class Table30Activity : AppCompatActivity() {
     private lateinit var puntuacion : Puntuacion
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        supportActionBar?.hide()
         binding = ActivityTableData30Binding.inflate(layoutInflater)
         setContentView(binding.root)
 

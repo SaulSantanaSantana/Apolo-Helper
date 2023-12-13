@@ -24,6 +24,7 @@ class TotalPointsActivity : AppCompatActivity() {
 
         binding = ActivityTotalPointsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         val bundle = intent.extras
         puntuacion = bundle?.get("puntuacion") as Puntuacion
