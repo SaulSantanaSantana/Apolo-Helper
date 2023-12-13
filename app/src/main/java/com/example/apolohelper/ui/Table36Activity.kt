@@ -1,5 +1,6 @@
 package com.example.apolohelper.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -109,7 +110,13 @@ class Table36Activity: AppCompatActivity() {
             puntuacion.AddPuntuacion(binding.editTextScore35.text.toString().toInt(),35)
             puntuacion.AddPuntuacion(binding.editTextScore36.text.toString().toInt(),36)
 
+
+
             //Hacer cosas con los puntos
+            val intent = Intent(this@Table36Activity, TotalPointsActivity::class.java)
+            intent.putExtra("puntuacion",puntuacion)
+            startActivity(intent)
+
 
         }
 

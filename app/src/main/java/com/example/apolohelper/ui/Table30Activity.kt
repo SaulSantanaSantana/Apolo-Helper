@@ -1,5 +1,6 @@
 package com.example.apolohelper.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -93,6 +94,11 @@ class Table30Activity : AppCompatActivity() {
             puntuacion.AddPuntuacion(binding.editTextScore30.text.toString().toInt(),30)
 
             //Hacer cosas con los puntos
+
+            val intent = Intent(this@Table30Activity, TotalPointsActivity::class.java)
+            intent.putExtra("puntuacion",puntuacion)
+            startActivity(intent)
+
 
         }
     }

@@ -44,37 +44,40 @@
             android:id="@+id/textViewEmail"
             android:layout_width="44dp"
             android:layout_height="25dp"
+            android:layout_marginStart="84dp"
             android:text="@string/email"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
             app:layout_constraintBottom_toTopOf="@+id/email"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="66dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textViewnombre"
             android:layout_width="67dp"
             android:layout_height="21dp"
+            android:layout_marginStart="84dp"
             android:text="@string/name"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
             app:layout_constraintBottom_toTopOf="@+id/nombre"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="66dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textViewContrasena"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
             android:text="@string/password"
+            android:textColor="#424B54"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
             app:layout_constraintBottom_toTopOf="@+id/contraseña"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="68dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/nombre"
@@ -177,6 +180,8 @@
             android:layout_marginEnd="4dp"
             app:layout_constraintBottom_toTopOf="@+id/nombre"
             app:layout_constraintEnd_toStartOf="@+id/textViewnombre"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/greyBox"
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/person_icon"
@@ -189,7 +194,10 @@
             android:layout_marginEnd="4dp"
             app:layout_constraintBottom_toTopOf="@+id/contraseña"
             app:layout_constraintEnd_toStartOf="@+id/textViewContrasena"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email"
+            app:layout_constraintVertical_bias="0.933"
             app:srcCompat="@drawable/lock_icon"
             tools:ignore="MissingConstraints" />
 
@@ -201,7 +209,10 @@
             android:layout_marginEnd="4dp"
             app:layout_constraintBottom_toTopOf="@+id/email"
             app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nombre"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/letter_icon" />
 
         <CheckBox

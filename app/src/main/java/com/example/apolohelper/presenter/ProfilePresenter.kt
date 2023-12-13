@@ -21,4 +21,9 @@ class ProfilePresenter {
             }
         })
     }
+
+    fun logOut(){
+        model.logOut()
+    }
+
 }

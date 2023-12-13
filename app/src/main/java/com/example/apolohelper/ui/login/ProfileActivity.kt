@@ -35,6 +35,13 @@ class ProfileActivity: AppCompatActivity(){
             startActivity(intent)
         }
 
+        binding.btnLogOut.setOnClickListener {
+            profilePresenter.logOut()
+            val intent = Intent(this@ProfileActivity, LoginActivity::class.java)
+            startActivity(intent)
+
+        }
+
     }
 
     fun displayData(nombre:String, club:String, dragonera:String,arco:String){

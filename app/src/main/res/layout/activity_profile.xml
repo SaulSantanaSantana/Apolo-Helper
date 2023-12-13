@@ -9,10 +9,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
-        android:background="#E0E0E0"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.login.LoginActivity">
+        android:background="#E0E0E0"
+        tools:context=".ui.login.LoginActivity"
+        tools:visibility="visible">
 
 
         <View
@@ -84,9 +85,9 @@
             android:layout_width="172dp"
             android:layout_height="51dp"
             android:text="Notificaciones"
-            android:thumbTint="@color/orange"
             android:textColor="#424B54"
             android:textSize="18sp"
+            android:thumbTint="@color/orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -101,8 +102,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="28dp"
             android:text="Dragonera demo"
-            android:textSize="18sp"
             android:textColor="#424B54"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/textViewDragonera"
             app:layout_constraintTop_toBottomOf="@+id/textViewClub" />
 
@@ -126,9 +127,9 @@
             android:layout_height="25dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="28dp"
-            android:textSize="18sp"
             android:text="Club demo"
             android:textColor="#424B54"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/textViewClub"
             app:layout_constraintTop_toBottomOf="@+id/lineProfile1" />
 
@@ -167,8 +168,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="28dp"
             android:text="Arco demo"
-            android:textSize="18sp"
             android:textColor="#424B54"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/textViewArch"
             app:layout_constraintTop_toBottomOf="@+id/textViewDragonera" />
 
@@ -177,16 +178,35 @@
             android:layout_width="141dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="Nombre demo"
+            android:textColor="#424B54"
             android:textSize="23sp"
             android:textStyle="bold"
-            android:textColor="#424B54"
-            android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/lineProfile1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:layout_constraintVertical_bias="0.107" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:background="@drawable/orange_background"
+            android:elevation="10dp"
+            android:enabled="true"
+            android:text="@string/logOut"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orangeBox"
+            app:layout_constraintVertical_bias="0.868"
+            tools:visibility="visible" />
 
         <ImageView
             android:id="@+id/Edit"

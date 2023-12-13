@@ -42,6 +42,7 @@ class AuthManager {
         return auth.currentUser?.uid
     }
 
+
     fun logOut() {
         auth.signOut()
     }

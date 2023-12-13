@@ -10,6 +10,9 @@ interface AuthModelInterface{
     fun getUserData(callback: (User?, Exception?) -> Unit)
 
     fun updateUser(user: User)
+    fun storePuntuacion(puntuacion: Puntuacion)
+
+    fun logOut()
 }
 class AuthModel(): AuthModelInterface{
     private val authManager=AuthManager()
@@ -57,6 +60,17 @@ class AuthModel(): AuthModelInterface{
             userDao.updateUser(userUid, user, fun(_,_){})
         }
 
+    }
+    override fun storePuntuacion(puntuacion: Puntuacion){
+        val userUid = authManager.getUserUid()
+        val puntuacionDao = PuntuacionDao()
+        if(userUid != null){
+            puntuacionDao.storePuntuacion(puntuacion, userUid,fun(_,_){})
+        }
+    }
+
+    override fun logOut() {
+        authManager.logOut()
     }
 
 }
