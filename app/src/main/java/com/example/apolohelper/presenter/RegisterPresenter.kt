@@ -15,15 +15,17 @@ class RegisterPresenter {
     }
 
     fun RegisterUser(name: String,email: String,password: String){
+        if(view.validateForm()){
+            this.model.register(name,password, email,fun(c,_){
+                if(c){
+                    view.showPopupMessage("registro","Registro Completado")
+                }
+                else{
+                    view.showPopupMessage("registro","Registro Fallido")
+                }
+            })
+        }
 
-        this.model.register(name,password, email,fun(c,_){
-            if(c){
-                view.showPopupMessage("registro","Registro Completado")
-            }
-            else{
-                view.showPopupMessage("registro","Registro Fallido")
-            }
-        })
     }
 
 }
