@@ -24,28 +24,25 @@
         android:id="@+id/textViewPerfil"
         android:layout_width="245dp"
         android:layout_height="50dp"
+        android:layout_marginTop="40dp"
         android:text="Tabla"
         android:textAlignment="center"
         android:textColor="@color/darkBlue"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/orangeBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/orangeBox"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/orangeBox"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toStartOf="@+id/textViewPerfil"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/orangeBox"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
         app:srcCompat="@drawable/arrow" />
 
     <Button
@@ -53,7 +50,7 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/orange_background"
         android:elevation="10dp"
         android:enabled="false"
@@ -62,19 +59,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="418dp"
-        android:layout_height="553dp"
+        android:layout_height="565dp"
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonEditData"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orangeBox"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPerfil"
         app:layout_constraintVertical_bias="0.229"
         tools:context=".MainActivity">
 
