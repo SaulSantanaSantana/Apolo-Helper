@@ -24,7 +24,8 @@ class ProfileActivity: AppCompatActivity(){
         setContentView(binding.root)
 
         binding.Edit.setOnClickListener{
-
+            val intent = Intent(this@ProfileActivity, EditProfileActivity::class.java)
+            startActivity(intent)
         }
         profilePresenter.displayInfo()
 

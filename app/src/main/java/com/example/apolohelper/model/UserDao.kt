@@ -49,9 +49,6 @@ class UserDao {
     fun updateUser(userId : String, user: User, callback: (Boolean, Exception?)-> Unit){
       val userDocument = userCollection.document(userId)
         val userData = mapOf(
-            "nombre" to user.nombre,
-            "correo" to user.correo,
-            "imgUrl" to user.imgUrl,
             "club" to user.club,
             "color" to user.color,
             "arco" to user.arco

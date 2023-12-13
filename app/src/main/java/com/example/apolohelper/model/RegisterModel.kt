@@ -8,6 +8,8 @@ interface AuthModelInterface{
     fun logInUser(email:String, password: String, callback: (Boolean,Exception?)->Unit)
 
     fun getUserData(callback: (User?, Exception?) -> Unit)
+
+    fun updateUser(user: User)
 }
 class AuthModel(): AuthModelInterface{
     private val authManager=AuthManager()
@@ -48,5 +50,13 @@ class AuthModel(): AuthModelInterface{
         }
     }
 
+    override fun updateUser(user: User){
+        val userUid = authManager.getUserUid()
+        val userDao = UserDao()
+        if (userUid != null) {
+            userDao.updateUser(userUid, user, fun(_,_){})
+        }
+
+    }
 
 }

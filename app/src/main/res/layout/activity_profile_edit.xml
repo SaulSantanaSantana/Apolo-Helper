@@ -211,7 +211,7 @@
             android:layout_gravity="start"
             android:background="@drawable/orange_background"
             android:elevation="10dp"
-            android:enabled="false"
+            android:enabled="true"
             android:textColor="@color/gray"
             android:text="@string/save_changes"
             android:textStyle="bold"
