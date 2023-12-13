@@ -1,247 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:background="#E0E0E0"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <View
-        android:id="@+id/orangeBox"
-        android:layout_width="0dp"
-        android:layout_height="116dp"
-        android:background="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <data>
 
-    <TextView
-        android:id="@+id/textViewPerfil"
-        android:layout_width="245dp"
-        android:layout_height="50dp"
-        android:text="@string/data"
-        android:textAlignment="center"
-        android:textColor="@color/darkBlue"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/orangeBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/orangeBox"
-        app:layout_constraintVertical_bias="0.53" />
+    </data>
 
-    <TextView
-        android:id="@+id/textViewDiana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diana"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDiana"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orangeBox"
-        app:layout_constraintVertical_bias="0.729" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.LoginActivity">
 
-    <TextView
-        android:id="@+id/textViewletra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Letra"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintBottom_toTopOf="@+id/editTextLetra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
-        app:layout_constraintStart_toEndOf="@+id/textViewDiana"
-        app:layout_constraintTop_toBottomOf="@+id/orangeBox"
-        app:layout_constraintVertical_bias="0.882" />
+        <View
+            android:id="@+id/orangeBox"
+            android:layout_width="0dp"
+            android:layout_height="116dp"
+            android:background="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textViewModalidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Modalidad"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLetra" />
+        <TextView
+            android:id="@+id/textViewPerfil"
+            android:layout_width="245dp"
+            android:layout_height="50dp"
+            android:text="@string/data"
+            android:textAlignment="center"
+            android:textColor="@color/darkBlue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/orangeBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orangeBox"
+            app:layout_constraintVertical_bias="0.53" />
 
-    <TextView
-        android:id="@+id/textViewCategoria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="9dp"
-        android:text="Categoria"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintBottom_toTopOf="@+id/editTextCategoria"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-        app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/textViewDiana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diana"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDiana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orangeBox"
+            app:layout_constraintVertical_bias="0.729" />
 
-    <TextView
-        android:id="@+id/textViewDistancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Distancia"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCategoria"
-        app:layout_constraintVertical_bias="0.689" />
+        <TextView
+            android:id="@+id/textViewletra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Letra"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLetra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.688"
+            app:layout_constraintStart_toEndOf="@+id/textViewDiana"
+            app:layout_constraintTop_toBottomOf="@+id/orangeBox"
+            app:layout_constraintVertical_bias="0.882" />
 
-    <TextView
-        android:id="@+id/textViewNumeroFlechas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/num_arrow"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#424B54"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textViewModalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Modalidad"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLetra" />
 
+        <TextView
+            android:id="@+id/textViewCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="9dp"
+            android:text="Categoria"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintBottom_toTopOf="@+id/editTextCategoria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/editTextNumeroFlechas"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Número de fechas"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-        app:layout_constraintVertical_bias="0.513" />
+        <TextView
+            android:id="@+id/textViewDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distancia"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCategoria"
+            app:layout_constraintVertical_bias="0.689" />
 
-    <EditText
-        android:id="@+id/editTextDiastancia"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Distancia"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextCategoria"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Categoria"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <EditText
-        android:id="@+id/editTextModalidad"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="148dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Modalidad"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orangeBox" />
-
-    <EditText
-        android:id="@+id/editTextDiana"
-        android:layout_width="208dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Diana"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/textViewModalidad"
-        app:layout_constraintEnd_toStartOf="@+id/editTextLetra"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextLetra"
-        android:layout_width="76dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="56dp"
-        android:background="@drawable/white_background"
-        android:ems="10"
-        android:hint="Letra"
-        android:inputType="text"
-        android:paddingStart="16dp"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextModalidad"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/buttonEditData"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_gravity="start"
-        android:layout_marginBottom="52dp"
-        android:background="@drawable/orange_background"
-        android:elevation="10dp"
-        android:enabled="false"
-        android:text="Siguiente >"
-        android:textColor="@color/gray"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
-        app:layout_constraintVertical_bias="0.837" />
+        <TextView
+            android:id="@+id/textViewNumeroFlechas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/num_arrow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424B54"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/editTextNumeroFlechas"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Número de fechas"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
+            app:layout_constraintVertical_bias="0.513" />
+
+        <EditText
+            android:id="@+id/editTextDiastancia"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Distancia"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumeroFlechas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextCategoria"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Categoria"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDiastancia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
+            app:layout_constraintVertical_bias="0.539" />
+
+        <EditText
+            android:id="@+id/editTextModalidad"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="148dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Modalidad"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orangeBox" />
+
+        <EditText
+            android:id="@+id/editTextDiana"
+            android:layout_width="208dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Diana"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/textViewModalidad"
+            app:layout_constraintEnd_toStartOf="@+id/editTextLetra"
+            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextLetra"
+            android:layout_width="76dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:hint="Letra"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/editTextModalidad"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonEditData"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/orange_background"
+            android:elevation="10dp"
+            android:enabled="false"
+            android:text="Siguiente >"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextModalidad"
+            app:layout_constraintVertical_bias="0.837" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -43,8 +43,8 @@ class LoginActivity : AppCompatActivity() {
             checkData(binding.email?.text.toString(), binding.password.text.toString())
         }
 
-        val btnRegistro: Button? = binding.register
-        btnRegistro?.setOnClickListener {
+        val btnRegistro: Button = findViewById(R.id.register)
+        btnRegistro.setOnClickListener {
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }
