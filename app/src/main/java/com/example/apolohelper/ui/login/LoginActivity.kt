@@ -37,9 +37,16 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnLog: Button? = binding.login
+
+        val btnLog: Button? = findViewById(R.id.buttonLogin)
         btnLog?.setOnClickListener {
             checkData(binding.email?.text.toString(), binding.password.text.toString())
+        }
+
+        val btnRegistro: Button? = binding.register
+        btnRegistro?.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 
