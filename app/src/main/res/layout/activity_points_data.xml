@@ -244,7 +244,7 @@
             android:layout_marginBottom="52dp"
             android:background="@drawable/orange_background"
             android:elevation="10dp"
-            android:enabled="false"
+            android:enabled="true"
             android:text="Siguiente >"
             android:textColor="@color/gray"
             android:textStyle="bold"

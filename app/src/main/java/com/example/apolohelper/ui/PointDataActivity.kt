@@ -26,6 +26,22 @@ class PointDataActivity : AppCompatActivity(){
         binding = ActivityPointsDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.buttonEditData.setOnClickListener {
+            val puntuacion: Puntuacion = getData()
+            if(puntuacion.numFlechas == 30){
+                val intent = Intent(this@PointDataActivity, Table30Activity::class.java)
+                intent.putExtra("puntuacion",puntuacion)
+                startActivity(intent)
+            }else if(puntuacion.numFlechas == 36){
+                val intent = Intent(this@PointDataActivity, Table36Activity::class.java)
+                intent.putExtra("puntuacion",puntuacion)
+                startActivity(intent)
+            }else{
+                binding.textViewNumeroFlechas.error = "El número de flechas ha de ser 30 o 36 según su modalidad"
+            }
+
+        }
+
 
     }
 
