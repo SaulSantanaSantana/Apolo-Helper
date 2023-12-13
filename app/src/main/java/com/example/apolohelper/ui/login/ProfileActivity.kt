@@ -12,6 +12,7 @@ import com.example.apolohelper.databinding.ActivityRegisterBinding
 import com.example.apolohelper.model.AuthModel
 import com.example.apolohelper.presenter.ProfilePresenter
 import com.example.apolohelper.presenter.RegisterPresenter
+import com.example.apolohelper.ui.PointDataActivity
 
 class ProfileActivity: AppCompatActivity(){
     private lateinit var loginViewModel: LoginViewModel
@@ -28,6 +29,11 @@ class ProfileActivity: AppCompatActivity(){
             startActivity(intent)
         }
         profilePresenter.displayInfo()
+
+        binding.imageView.setOnClickListener{
+            val intent = Intent(this@ProfileActivity, PointDataActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
